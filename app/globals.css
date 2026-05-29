@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  /* TrimQ Color Palette */
+  --color-cream: #F5F0E8;
+  --color-forest: #1C3A2A;
+  --color-lime: #BAFF00;
+  --color-forest-light: #2D5A42;
+  --color-forest-dark: #142920;
+  
+  /* Semantic Colors */
+  --color-background: #F5F0E8;
+  --color-foreground: #1C3A2A;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #1C3A2A;
+  --color-primary: #1C3A2A;
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: #F5F0E8;
+  --color-secondary-foreground: #1C3A2A;
+  --color-accent: #BAFF00;
+  --color-accent-foreground: #1C3A2A;
+  --color-muted: #E8E3DB;
+  --color-muted-foreground: #5A6B5E;
+  --color-border: #D4CFC5;
+  
+  /* Radius */
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  
+  /* Shadows */
+  --shadow-card: 0 4px 20px rgba(28, 58, 42, 0.08);
+  --shadow-card-hover: 0 8px 30px rgba(28, 58, 42, 0.12);
+  --shadow-selected: 0 8px 30px rgba(186, 255, 0, 0.2);
+  
+  /* Fonts */
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "DM Serif Display", ui-serif, Georgia, serif;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--color-lime);
+  color: var(--color-forest);
+}
